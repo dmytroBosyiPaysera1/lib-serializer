@@ -39,6 +39,11 @@ class Filter
     protected $before;
 
     /**
+     * @var string|null
+     */
+    protected $permissionMatchMode;
+
+    /**
      * Sets orderBy
      *
      * @param string $orderBy
@@ -173,6 +178,26 @@ class Filter
     public function setBefore($before)
     {
         $this->before = $before;
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPermissionMatchMode()
+    {
+        return $this->permissionMatchMode;
+    }
+
+    /**
+     * @param string|null $permissionMatchMode
+     *
+     * @return $this
+     */
+    public function setPermissionMatchMode($permissionMatchMode)
+    {
+        $this->permissionMatchMode = $permissionMatchMode;
+
         return $this;
     }
 
