@@ -41,7 +41,7 @@ class Filter
     /**
      * @var string|null
      */
-    protected $permissionMatchMode;
+    protected $permissionMatchMode = null;
 
     /**
      * Sets orderBy
